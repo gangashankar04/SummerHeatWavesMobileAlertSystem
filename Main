@@ -1,0 +1,39 @@
+# Data Collection :
+
+import requests
+
+def fetch_weather_data(api_url, api_key):
+    response = requests.get(f"{api_url}?apikey={api_key}")
+    return response.json()
+
+# Model Training (using a simple time series forecasting model) :
+
+import pandas as pd
+   from statsmodels.tsa.arima.model import ARIMA
+
+   # Load historical weather data
+   data = pd.read_csv('historical_weather_data.csv', parse_dates=['date'], index_col='date')
+
+   # Train ARIMA model
+   model = ARIMA(data['temperature'], order=(5,1,0))
+   model_fit = model.fit()
+
+   # Save the model
+   model_fit.save('heat_wave_model.pkl')
+
+# Prediction and Alert Triggering :
+
+import pickle
+   from datetime import datetime, timedelta
+
+   # Load the model
+   model_fit = pickle.load(open('heat_wave_model.pkl', 'rb'))
+
+   # Predict the next 7 days
+   predictions = model_fit.forecast(steps=7)
+
+   # Check if any day exceeds the threshold
+   if any(predictions > 35):
+       # Trigger alerts (e.g., via FCM, SMS, etc.)
+       send_alert("Heat wave predicted in the next 7 days!")
+
