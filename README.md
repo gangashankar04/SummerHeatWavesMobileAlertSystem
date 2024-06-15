@@ -65,10 +65,12 @@ devices.
   1. Clean and normalize data.
   2. Handle missing values.
 # Model Training:
-  1.Use historical data to train models.
-  2.Validate models using cross-validation.
+  1. Use historical data to train models.
+  2. Validate models using cross-validation.
 # Model Evaluation:
-  1.Test models on unseen data.
-  2.Use metrics like RMSE, MAE, or accuracy to evaluate performance.
+  1. Test models on unseen data.
+  2. Use metrics like RMSE, MAE, or accuracy to evaluate performance.
+
+
 
 
