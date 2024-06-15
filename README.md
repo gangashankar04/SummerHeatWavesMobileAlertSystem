@@ -62,13 +62,13 @@ devices.
 # Steps : 
 
 # Data Preprocessing:
-   > Clean and normalize data.
-   > Handle missing values.
+   -> Clean and normalize data.
+   -> Handle missing values.
 # Model Training:
-   > Use historical data to train models.
-   > Validate models using cross-validation.
+   -> Use historical data to train models.
+   -> Validate models using cross-validation.
 # Model Evaluation:
-   > Test models on unseen data.
-   > Use metrics like RMSE, MAE, or accuracy to evaluate performance.
+   -> Test models on unseen data.
+   -> Use metrics like RMSE, MAE, or accuracy to evaluate performance.
 
 
