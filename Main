@@ -1,7 +1,6 @@
 # Data Collection :
 
 import requests
-
 def fetch_weather_data(api_url, api_key):
     response = requests.get(f"{api_url}?apikey={api_key}")
     return response.json()
