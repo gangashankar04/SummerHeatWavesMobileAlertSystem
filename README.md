@@ -9,9 +9,9 @@ devices.
 *Data Collection*
    
 {Sources}:
-> Weather data from meteorological agencies (e.g., NOAA, NASA).
-> Historical weather data to train AI models.
-> Real-time weather data for live predictions.
+1. Weather data from meteorological agencies (e.g., NOAA, NASA).
+2. Historical weather data to train AI models.
+3. Real-time weather data for live predictions.
 
 {Methods}:
 > APIs to gather real-time weather data.
