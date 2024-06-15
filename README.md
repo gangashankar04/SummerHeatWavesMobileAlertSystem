@@ -4,6 +4,9 @@
 The Summer Heat Waves Mobile Alert System aims to provide timely and effective alerts to the public, especially vulnerable populations, during extreme
 heat conditions. This system will help reduce the negative impacts of heat waves by disseminating critical information and precautions through mobile 
 devices.
+
+# Example- ![heatwave_img](https://github.com/gangashankar04/SummerHeatWavesMobileAlertSystem/assets/170317051/f5e58ac7-b05a-4ca6-b887-f05f5082c1fe)
+
 # Key Components:
 
 *Data Collection*
